@@ -7,13 +7,13 @@ import (
 )
 
 func main() {
-	// Define command-line flags
-	length := flag.Int("length", 16, "Length of the password")
+	// Define command line flags
+	length := flag.Int("length", 12, "Length of the password")
 	count := flag.Int("count", 1, "Number of passwords to generate")
 	useUpper := flag.Bool("upper", true, "Include uppercase letters")
 	useLower := flag.Bool("lower", true, "Include lowercase letters")
 	useDigits := flag.Bool("digits", true, "Include digits")
-	useSpecial := flag.Bool("special", true, "Include special characters")
+	useSpecial := flag.Bool("special", false, "Include special characters")
 	noSimilar := flag.Bool("no-similar", false, "Exclude similar characters (i, l, 1, L, o, 0, O)")
 	noAmbiguous := flag.Bool("no-ambiguous", false, "Exclude ambiguous characters ({ } [ ] ( ) / \\ ' \" ` ~ , ; : . < >)")
 
